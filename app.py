@@ -12,6 +12,9 @@ import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 import warnings
 warnings.filterwarnings('ignore')
+import pkg_resources
+st.write([pkg.key for pkg in pkg_resources.working_set])
+
 
 # Page config
 st.set_page_config(page_title="Stock Market Dashboard", layout="wide", initial_sidebar_state="expanded")
